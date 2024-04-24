@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Home -  Ndima Khanyisa</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+                rel="stylesheet" />
         <link rel="stylesheet" href="styles.css">
+        <script src="./data.js" defer></script>   
     </head>
 
     
@@ -24,20 +30,47 @@
     </header>
         
     <main>
-            <h1>Contact Us</h1>
-            <div class="contact-detials">
-                <p>Email: mkndima@gmail.com</p>
-                <p>Phone: +2771 984 6085</p>
-                <p>Address: Dan Extension 2, Tzaneen, South Africa</p>
-            </div>
+        <div class="contact">
+            <h1> Contact Form</h1>
+         
+            <form action="https://formspree.io/f/xqkrwwwb" method="post">
+                <label >
+                    Your Name(s): 
+                    <input type="text"  name="name" required>
+                </label>
+                <label >
+                    Your Surname: 
+                    <input type="text" name="surname" required>
+                </label>
+                <label >
+                    Your Email: 
+                    <input type="email" name="email" required>
+                </label>
+                <label >
+                    Your Message:
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>                
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+
+        
+            <h2>Contact Us</h2>
+            <p>Phone Number: <span id="phone"></span></p>
+            <p>Email Address: <span id="email"></span></p>
+           
+           
     </main>
     <footer>
-            <p>&copy; 
-                <ul>
-                    <li><a href="#">https://www.linkedin.com/in/ndima-michelle94bb0218b</a></li>
-                </ul>
-            071 984 6085</p>
+        &copy;
+        <ul class="social-icons">
+            <li  class="ri-phone-fill">+2771 984 6085</li>
+            <li  class="ri-linkedin-box-fill"><a href="#">https://www.linkedin.com/in/ndima-michelle94bb0218b</a></li>
+        </ul>
     </footer>
+
+     
 </body>
 
 </html>
